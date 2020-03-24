@@ -119,7 +119,8 @@ namespace SeatReservation.BusinessLogic.Tests.Database
                     SeatId = D4SeatId,
                     AllocationTypeId = bookedSeatState.AllocationTypeId,
                     PersonName = "John Smith",
-                    Email = "jsmith@gmail.com"
+                    Email = "jsmith@gmail.com",
+                    Identifier = "101010"
                 },
                 new EventSeat
                 {
@@ -127,7 +128,8 @@ namespace SeatReservation.BusinessLogic.Tests.Database
                     SeatId = D5SeatId,
                     AllocationTypeId = bookedSeatState.AllocationTypeId,
                     PersonName = "James Cook",
-                    Email = "jamescook@gmail.com"
+                    Email = "jamescook@gmail.com",
+                    Identifier="12345"
                 },
                 new EventSeat
                 {
@@ -135,7 +137,8 @@ namespace SeatReservation.BusinessLogic.Tests.Database
                     SeatId = D6SeatId,
                     AllocationTypeId = bookedSeatState.AllocationTypeId,
                     PersonName = "Michael Taylor",
-                    Email = "mtaylor@gmail.com"
+                    Email = "mtaylor@gmail.com",
+                    Identifier = "2020202"
                 });
 
             seatReservationDataContext.SaveChanges();

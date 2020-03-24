@@ -4,14 +4,73 @@
     "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj": {}
   },
   "projects": {
-    "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj": {
+    "C:\\Projects3\\SeatReservation\\SeatReservation.BusinessLogic\\SeatReservation.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj",
-        "projectName": "SeatReservation",
-        "projectPath": "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj",
+        "projectUniqueName": "C:\\Projects3\\SeatReservation\\SeatReservation.BusinessLogic\\SeatReservation.BusinessLogic.csproj",
+        "projectName": "SeatReservation.BusinessLogic",
+        "projectPath": "C:\\Projects3\\SeatReservation\\SeatReservation.BusinessLogic\\SeatReservation.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects3\\SeatReservation\\SeatReservation\\obj\\",
+        "outputPath": "C:\\Projects3\\SeatReservation\\SeatReservation.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects3\\SeatReservation\\SeatReservation.Database\\SeatReservation.Database.csproj": {
+                "projectPath": "C:\\Projects3\\SeatReservation\\SeatReservation.Database\\SeatReservation.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects3\\SeatReservation\\SeatReservation.Database\\SeatReservation.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects3\\SeatReservation\\SeatReservation.Database\\SeatReservation.Database.csproj",
+        "projectName": "SeatReservation.Database",
+        "projectPath": "C:\\Projects3\\SeatReservation\\SeatReservation.Database\\SeatReservation.Database.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects3\\SeatReservation\\SeatReservation.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +99,77 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj",
+        "projectName": "SeatReservation",
+        "projectPath": "C:\\Projects3\\SeatReservation\\SeatReservation\\SeatReservation.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects3\\SeatReservation\\SeatReservation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects3\\SeatReservation\\SeatReservation.BusinessLogic\\SeatReservation.BusinessLogic.csproj": {
+                "projectPath": "C:\\Projects3\\SeatReservation\\SeatReservation.BusinessLogic\\SeatReservation.BusinessLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SeatReservation.BusinessLogic;
+using SeatReservation.BusinessLogic.Interfaces;
+using SeatReservation.Database.Interfaces;
+using SeatReservation.Temp;
 
 namespace SeatReservation
 {
@@ -26,6 +30,9 @@ namespace SeatReservation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddTransient<ISeatReservationDataContext, InMemorySeatReservationDataContext>();
+            services.AddScoped<IEventList, EventList>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

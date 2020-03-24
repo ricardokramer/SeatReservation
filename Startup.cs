@@ -33,6 +33,9 @@ namespace SeatReservation
 
             services.AddTransient<ISeatReservationDataContext, InMemorySeatReservationDataContext>();
             services.AddScoped<IEventList, EventList>();
+            services.AddScoped<ISeatList, SeatList>();
+            services.AddScoped<ISeatAdd, SeatAdd>();
+            services.AddScoped<IEmailProvider, EmailProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
